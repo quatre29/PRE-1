@@ -33,7 +33,7 @@ Here are some recommended Codewars katas to get you started.
 
  - [Max and Min Values](http://www.codewars.com/kata/find-maximum-and-minimum-values-of-a-list)
  - [Miles per gallon to kilometers per liter](http://www.codewars.com/kata/miles-per-gallon-to-kilometers-per-liter)
- - [Find nth Digit](http://www.codewars.com/kata/find-nth-digit-of-a-number)
+ - [Find nth Digit](http://www.codewars.com/kata/find-the-nth-digit-of-a-number)
  - [Are the numbers in order?](http://www.codewars.com/kata/are-the-numbers-in-order)
  - [Get the Middle Character](http://www.codewars.com/kata/get-the-middle-character)
  - [Removing Elements](http://www.codewars.com/kata/removing-elements)
