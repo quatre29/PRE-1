@@ -320,7 +320,7 @@ describe("types", () => {
 
   describe("isItemOmnipresent", () => {
     it("returns true if the passed value is present in all the arrays inside the passed array", () => {
-      let arrayOfArrays = [[9, 2, 3], [4, 5, 9], [-2, 9, -1]];
+      const arrayOfArrays = [[9, 2, 3], [4, 5, 9], [-2, 9, -1], [1, 2, 3, 4, 5, 9]];
       expect(isItemOmnipresent(arrayOfArrays, 9)).to.be.true;
     });
     it("returns false if the passed value is not present in at least one array inside the passed array", () => {
