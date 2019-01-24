@@ -116,8 +116,10 @@ function mergeArrays (arr1, arr2) {
     // return a new array with all the elements of arr1 followed by all the elements of arr2
 }
   
-function flattenArray (arrayOfArrays) {
-    // given a nested array or arrays, return a new, flat array with all the elements of all the nested arrays in their original order
+function flattenArrayByOne (arrayOfArrays) {
+    // given a nested array or arrays, return a new array with one less level of nesting. All the elements of all the original nested arrays must be kept in their original order
+    // for example: 
+    // [[1],[2],[[3,4]]] => [1,2,[3,4]]
 }
   
 function isItemOmnipresent (arrayOfArrays, item) {
@@ -195,5 +197,5 @@ function countTheObjects (arr) {
 }
   
 module.exports = {
-    modulo, squareRoot, raiseToPower, formatMoney, calculateCircleArea, calculateFullTurns, areValuesEqual, areValuesNotEqual, isFromThe60s, isEvenLength, areStringsEqualCaseInsensitive, getLength, putNamesTogether, capitaliseString, dontShoutSentence, getMiddle, getLastWord, hyphenateWords, convertToCamelCase, getEvenNumbers, getItemsLongerThan, getLastItems, getSandwichFilling, removeItem, mergeArrays, flattenArray, isItemOmnipresent, isOver40, getUserAge, createProduct, addPriceToProduct, createNorthcoder, createUserString, getAlbumProperties, deleteManyPasswords, countTheObjects
+    modulo, squareRoot, raiseToPower, formatMoney, calculateCircleArea, calculateFullTurns, areValuesEqual, areValuesNotEqual, isFromThe60s, isEvenLength, areStringsEqualCaseInsensitive, getLength, putNamesTogether, capitaliseString, dontShoutSentence, getMiddle, getLastWord, hyphenateWords, convertToCamelCase, getEvenNumbers, getItemsLongerThan, getLastItems, getSandwichFilling, removeItem, mergeArrays, flattenArrayByOne, isItemOmnipresent, isOver40, getUserAge, createProduct, addPriceToProduct, createNorthcoder, createUserString, getAlbumProperties, deleteManyPasswords, countTheObjects
 }

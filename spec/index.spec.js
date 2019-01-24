@@ -25,7 +25,7 @@ const {
   getLastItems,
   removeItem,
   mergeArrays,
-  flattenArray,
+  flattenArrayByOne,
   isItemOmnipresent,
   isOver40,
   getUserAge,
@@ -299,20 +299,20 @@ describe("types", () => {
     });
   });
 
-  describe("flattenArray", () => {
+  describe("flattenArrayByOne", () => {
     it("returns a flat array with all the elements of the nested arrays in their original order", () => {
       let arrayOfArrays, expected;
       arrayOfArrays = [[1, 2], [], [3], ["hello", true]];
       expected = [1, 2, 3, "hello", true];
-      expect(flattenArray(arrayOfArrays)).to.eql(expected);
+      expect(flattenArrayByOne(arrayOfArrays)).to.eql(expected);
 
       arrayOfArrays = [[1], [2], [[3, 4]]];
       expected = [1, 2, [3, 4]];
-      expect(flattenArray(arrayOfArrays)).to.eql(expected);
+      expect(flattenArrayByOne(arrayOfArrays)).to.eql(expected);
     });
     it("does not mutate the passed array, i.e. returns a new array, leaving the original untouched", () => {
       const original = [[1, 2], [], [3, 4]];
-      const flat = flattenArray(original);
+      const flat = flattenArrayByOne(original);
       expect(original).to.not.equal(flat);
       expect(original).to.eql([[1, 2], [], [3, 4]]);
     });
