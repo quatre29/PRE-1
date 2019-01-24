@@ -151,9 +151,10 @@ function addPriceToProduct (product, price) {
 function createNorthcoder (name, yearOfBirth) {
     // return an object with:
     // a name property set to the value of the name parameter
-    // an age property set to whatever the age of the northcoder would be on the year 2018
+    // an age property set to whatever the age of the northcoder would be in the year 2019
     // a language property set to 'JavaScript'
 }
+
   
 function createUserString (userObj) {
     // should take as an argument an object with the format from createNorthcoder
