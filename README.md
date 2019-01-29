@@ -126,5 +126,4 @@ This will allow the test suite to skip over it and it will list as 'pending' in 
 
 10. Once you've completed these problems, <a href='https://us-central1-precourse-pushes.cloudfunctions.net/reviewme/?section=PRE-1' target='_blank'> request a review.</a>
 
-
-
+11. The teaching team will provide feedback after reviewing your code, typically within 48 hours. Fix any issues with your solutions and apply these suggestions to this and subsequent sections.
