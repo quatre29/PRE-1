@@ -85,13 +85,13 @@ There are two sets of challenges attached to this section. The first are aimed a
 
 These videos demonstrate the workflow required to get, solve and submit the final challenges. There's step-by-step instructions below too - this will put your skills with the command line and git to the test, alongside JavaScript problem solving.
 
-[Forking and cloning the project](https://vimeo.com/243691923/ed57436c53)
+[Forking and cloning the project](https://youtu.be/QxvgzQFmOJE)
 
-[Solving some drills](https://vimeo.com/243828846/d6ad266828)
+[Solving a problem](https://youtu.be/8r2DrCwKPRY)
 
 Please note that the arrangement of the files has changed a bit since we recorded this video. Follow the guide below when ensuring you are in the right directory to run `npm install` and `npm test`.
 
-[Pushing your completed code to Github](https://vimeo.com/243841377/3b6df0e550)
+[Pushing and committing your code](https://youtu.be/WkZvpDnphqE)
 
 1. Fork and clone this repository as seen in the video below.
 
