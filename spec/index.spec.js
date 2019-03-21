@@ -229,9 +229,9 @@ describe("types", () => {
 
   describe("getItemsLongerThan", () => {
     it("returns an array of items in the passed array that are longer than the passed length", () => {
-      const array = ["a", "bb", "ccc", "dddd"];
+      const array = ["ccc", "a", "dddd", "bb"];
       expect(getItemsLongerThan(array, 0)).to.eql(array);
-      expect(getItemsLongerThan(array, 1)).to.eql(["bb", "ccc", "dddd"]);
+      expect(getItemsLongerThan(array, 1)).to.eql(["ccc", "dddd", "bb"]);
       expect(getItemsLongerThan(array, 2)).to.eql(["ccc", "dddd"]);
       expect(getItemsLongerThan(array, 10)).to.eql([]);
     });
