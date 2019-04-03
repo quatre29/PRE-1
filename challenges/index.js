@@ -1,178 +1,175 @@
 // Fill in the body of the functions following the instructions.
 // Important! Don't change the name of the functions.
-  
-function modulo (a, b) {
-    // return the remainder of the division a / b
-}
-  
-function squareRoot (n) {
-    // return the square root of n
-}
-  
-function raiseToPower (m, n) {
-    // return the result of raising m to the nth power
+
+function modulo(a, b) {
+  // return the remainder of the division a / b
 }
 
-function formatMoney (amount) {
-    /**
-     * return a the amount formatted into pounds sterling
-     * Amounts should be a string with the £ symbol in front
-     * formatMoney(2.33) => "£2.33"
-     * Amounts should be rounded to 2 decimal numbers
-     * formatMoney(2.338) => "£2.34"
-     * Amounts should always have 2 decimal numbers even if they are zeroes
-     * formatMoney(1) => "£1.00"
-     */
-}
-  
-function calculateCircleArea (r) {
-    // return the area of a circle with radius r
-    // round result to 3 decimal numbers
-}
-  
-function calculateFullTurns (degrees) {
-    // return the number of full turns you can make with the provided degrees
-    // 1 full turn === 360 degrees
+function squareRoot(n) {
+  // return the square root of n
 }
 
-function getLength (str) {
-    // return the length of the passed string
+function raiseToPower(m, n) {
+  // return the result of raising m to the nth power
 }
 
-
-function putNamesTogether (firstName, lastName) {
-    // return the first and last names with a space between them
-}
-  
-function capitaliseString (str) {
-    // return the passed string with its first letter capitalised
-}
-  
-function dontShoutSentence (SENTENCE) {
-    // return the passed sentence (IN ALL CAPS) in lower case
-    // keep the first character capitalised
+function formatMoney(amount) {
+  /**
+   * return a the amount formatted into pounds sterling
+   * Amounts should be a string with the £ symbol in front
+   * formatMoney(2.33) => "£2.33"
+   * Amounts should be rounded to 2 decimal numbers
+   * formatMoney(2.338) => "£2.34"
+   * Amounts should always have 2 decimal numbers even if they are zeroes
+   * formatMoney(1) => "£1.00"
+   */
 }
 
-function getMiddle (str) {
-    // return the middle (or middle two) character(s) of the passed string
-}
-  
-function getLastWord (words) {
-    // return the last word of a sentence
-    // you can assume words doesn't have a period at the end
-}
-  
-function hyphenateWords (words) {
-    // return the passed string with the spaces replaced by hyphens ("-")
-}
-  
-function convertToCamelCase (words) {
-    // convert the passed string of space-separated words to camel case
-    // camel case looks like this --> camelCaseLooksLikeThis
+function calculateCircleArea(r) {
+  // return the area of a circle with radius r
+  // round result to 3 decimal numbers
 }
 
-function areValuesEqual (left, right) {
-    // return true if the passed arguments are strictly equal
+function calculateFullTurns(degrees) {
+  // return the number of full turns you can make with the provided degrees
+  // 1 full turn === 360 degrees
 }
-  
-function areValuesNotEqual (left, right) {
-    // return true if the passed arguments are NOT equal
+
+function getLength(str) {
+  // return the length of the passed string
 }
-  
-function isFromThe60s (year) {
-    // return true if the year is in the 1960's
+
+function putNamesTogether(firstName, lastName) {
+  // return the first and last names with a space between them
 }
-  
-function isEvenLength (string) {
-    // return true if string has an even length
+
+function capitaliseString(str) {
+  // return the passed string with its first letter capitalised
 }
-  
-function areStringsEqualCaseInsensitive (left, right) {
-    // return true if the passed strings are equal ignoring case
+
+function dontShoutSentence(SENTENCE) {
+  // return the passed sentence (IN ALL CAPS) in lower case
+  // keep the first character capitalised
 }
- 
-  
-function getEvenNumbers (nums) {
-    //return an array of only the even numbers in the given array
+
+function getMiddle(str) {
+  // return the middle (or middle two) character(s) of the passed string
 }
-  
-function getItemsLongerThan (array, len) {
-    //return an array of only the items longer than the given length
+
+function getLastWord(words) {
+  // return the last word of a sentence
+  // you can assume words doesn't have a period at the end
 }
-  
-function getLastItems (array, n) {
-    // return an array with the 'n' last items of 'array'
+
+function hyphenateWords(words) {
+  // return the passed string with the spaces replaced by hyphens ("-")
 }
-  
-function getSandwichFilling (sandwich) {
-    // if an array is a sandwich, the first and last items are the bread, return an array with the filling of the sandwich
+
+function convertToCamelCase(words) {
+  // convert the passed string of space-separated words to camel case
+  // camel case looks like this --> camelCaseLooksLikeThis
 }
-  
-function removeItem (array, n) {
-    // return a new array without the item on position 'n', effectively removing it from the array
+
+function areValuesEqual(left, right) {
+  // return true if the passed arguments are strictly equal
 }
-  
-function mergeArrays (arr1, arr2) {
-    // return a new array with all the elements of arr1 followed by all the elements of arr2
+
+function areValuesNotEqual(left, right) {
+  // return true if the passed arguments are NOT equal
 }
-  
-function flattenArrayByOne (arrayOfArrays) {
-    // given a nested array or arrays, return a new array with one less level of nesting. All the elements of all the original nested arrays must be kept in their original order
-    // for example: 
-    // [[1],[2],[[3,4]]] => [1,2,[3,4]]
+
+function isFromThe60s(year) {
+  // return true if the year is in the 1960's
 }
-  
-function isItemOmnipresent (arrayOfArrays, item) {
-    // return true if the passed item is present in all the arrays inside arrayOfArrays
+
+function isEvenLength(string) {
+  // return true if string has an even length
 }
-  
-function isOver40 (user) {
-    /*
+
+function areStringsEqualCaseInsensitive(left, right) {
+  // return true if the passed strings are equal ignoring case
+}
+
+function getEvenNumbers(nums) {
+  //return an array of only the even numbers in the given array
+}
+
+function getItemsLongerThan(array, len) {
+  //return an array of only the items longer than the given length
+}
+
+function getLastItems(array, n) {
+  // return an array with the 'n' last items of 'array'
+}
+
+function getSandwichFilling(sandwich) {
+  // if an array is a sandwich, the first and last items are the bread, return an array with the filling of the sandwich
+}
+
+function removeItem(array, n) {
+  // return a new array without the item on position 'n', effectively removing it from the array
+}
+
+function mergeArrays(arr1, arr2) {
+  // return a new array with all the elements of arr1 followed by all the elements of arr2
+}
+
+function flattenArrayByOne(arrayOfArrays) {
+  // given a nested array or arrays, return a new array with one less level of nesting. All the elements of all the original nested arrays must be kept in their original order
+  // for example:
+  // [[1],[2],[[3,4]]] => [1,2,[3,4]]
+}
+
+function isItemOmnipresent(arrayOfArrays, item) {
+  // return true if the passed item is present in all the arrays inside arrayOfArrays
+}
+
+function isOver40(user) {
+  /*
     This function takes a user object with a property of age. It should return true if the user is over 40 and false if the user is 40 or younger.
     */
 }
-  
-function getUserAge (user) {
-    // return the user's age as a number.
-    // you can assume that the passed user will always have a 'yearOfBirth' property.
+
+function getUserAge(user) {
+  // return the user's age as a number.
+  // you can assume that the passed user will always have a 'yearOfBirth' property.
 }
-  
-function createProduct () {
-    /*
+
+function createProduct() {
+  /*
     This function should return an object with a type property and a price property. The value for type can be any string, and the value for price should be a number.
     */
 }
-  
-function addPriceToProduct (product, price) {
-    /* The argument product will be an object that looks like this:
+
+function addPriceToProduct(product, price) {
+  /* The argument product will be an object that looks like this:
     { type: 'Tofu slices' }
     Add a price property to this object and set its value to the price passed in as an argument. Then return the object.
     */
 }
-  
-function createNorthcoder (name, yearOfBirth) {
-    // return an object with:
-    // a name property set to the value of the name parameter
-    // an age property set to whatever the age of the northcoder would be in the year 2019
-    // a language property set to 'JavaScript'
+
+function createNorthcoder(name, yearOfBirth) {
+  // return an object with:
+  // a name property set to the value of the name parameter
+  // an age property set to whatever the age of the northcoder would be in the year 2019
+  // a language property set to 'JavaScript'
 }
 
-  
-function createUserString (userObj) {
-    // should take as an argument an object with the format from createNorthcoder
-    // returns a string with the user's details in the form:
-    // 'name: Mitch, age: 27, language: Javascript';
-    // Note - this is a good use case of string template literals. 
+function createUserString(userObj) {
+  // should take as an argument an object with the format from createNorthcoder
+  // returns a string with the user's details in the form:
+  // 'name: Mitch, age: 27, language: Javascript';
+  // Note - this is a good use case of string template literals.
 }
-  
-function getAlbumProperties (obj) {
-    // should take an object with information about an album
-    // should return an array containing all of the object's keys
-    // E.g. {a: 'foo', b: 'car', c: 'bar'} should return ['a', 'b', 'c']
+
+function getAlbumProperties(obj) {
+  // should take an object with information about an album
+  // should return an array containing all of the object's keys
+  // E.g. {a: 'foo', b: 'car', c: 'bar'} should return ['a', 'b', 'c']
 }
-  
-function deleteManyPasswords (users) {
-    /*
+
+function deleteManyPasswords(users) {
+  /*
     This function take an array of user objects and deletes the password key value pair on each user object.
     E.g.
     [
@@ -188,14 +185,49 @@ function deleteManyPasswords (users) {
     ]
     */
 }
-  
-function countTheObjects (arr) {
-    /*
+
+function countTheObjects(arr) {
+  /*
     This function takes an array of different data types. It should return a count of the number of objects in the array.
     NB, think carefully about how to test if something is an object! Arrays are technically types of objects in JavaScript, as is the value null. However these should not be counted.
     */
 }
-  
+
 module.exports = {
-    modulo, squareRoot, raiseToPower, formatMoney, calculateCircleArea, calculateFullTurns, areValuesEqual, areValuesNotEqual, isFromThe60s, isEvenLength, areStringsEqualCaseInsensitive, getLength, putNamesTogether, capitaliseString, dontShoutSentence, getMiddle, getLastWord, hyphenateWords, convertToCamelCase, getEvenNumbers, getItemsLongerThan, getLastItems, getSandwichFilling, removeItem, mergeArrays, flattenArrayByOne, isItemOmnipresent, isOver40, getUserAge, createProduct, addPriceToProduct, createNorthcoder, createUserString, getAlbumProperties, deleteManyPasswords, countTheObjects
-}
+  modulo,
+  squareRoot,
+  raiseToPower,
+  formatMoney,
+  calculateCircleArea,
+  calculateFullTurns,
+  areValuesEqual,
+  areValuesNotEqual,
+  isFromThe60s,
+  isEvenLength,
+  areStringsEqualCaseInsensitive,
+  getLength,
+  putNamesTogether,
+  capitaliseString,
+  dontShoutSentence,
+  getMiddle,
+  getLastWord,
+  hyphenateWords,
+  convertToCamelCase,
+  getEvenNumbers,
+  getItemsLongerThan,
+  getLastItems,
+  getSandwichFilling,
+  removeItem,
+  mergeArrays,
+  flattenArrayByOne,
+  isItemOmnipresent,
+  isOver40,
+  getUserAge,
+  createProduct,
+  addPriceToProduct,
+  createNorthcoder,
+  createUserString,
+  getAlbumProperties,
+  deleteManyPasswords,
+  countTheObjects
+};
