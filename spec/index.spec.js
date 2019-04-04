@@ -384,9 +384,13 @@ describe('types', () => {
         type: 'Tofu slices'
       };
       let newProduct = addPriceToProduct(product, 1.25);
-      expect(newProduct).to.eql({ type: 'Tofu slices', price: 1.25 });
+      expect(newProduct).to.eql({ type: "Tofu slices", price: 1.25 });
+      expect(product.price).to.equal(1.25);
+      delete product.price;
+      expect(product).to.eql({ type: "Tofu slices" });
       newProduct = addPriceToProduct(product, 1.35);
-      expect(newProduct).to.eql({ type: 'Tofu slices', price: 1.35 });
+      expect(newProduct).to.eql({ type: "Tofu slices", price: 1.35 });
+      expect(product.price).to.equal(1.35);
     });
   });
 
