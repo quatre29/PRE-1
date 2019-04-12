@@ -396,14 +396,22 @@ describe('types', () => {
 
   describe('createNorthcoder', () => {
     it("returns an object with a 'name' property set to the passed name argument", () => {
-      const northcoder = createNorthcoder('Mauro');
+      let northcoder = createNorthcoder('Mauro');
       expect(northcoder).to.haveOwnProperty('name');
       expect(northcoder.name).to.equal('Mauro');
+
+      northcoder = createNorthcoder('Ant');
+      expect(northcoder).to.haveOwnProperty('name');
+      expect(northcoder.name).to.equal('Ant');
     });
     it("returns an object with an 'age' property set to the user's age in the year 2019 according to the passed yearOfBirth argument", () => {
-      const northcoder = createNorthcoder('Mauro', 1989);
+      let northcoder = createNorthcoder('Mauro', 1989);
       expect(northcoder).to.haveOwnProperty('age');
       expect(northcoder.age).to.equal(30);
+
+      northcoder = createNorthcoder('Ant', 1991);
+      expect(northcoder).to.haveOwnProperty('age');
+      expect(northcoder.age).to.equal(28);
     });
     it("returns an object with a 'language' property set to JavaScript", () => {
       const northcoder = createNorthcoder('Mauro', 1989);
@@ -414,25 +422,28 @@ describe('types', () => {
 
   describe('createUserString', () => {
     it('returns a string containing "name : <user\'s name>"', () => {
-      const mitchObj = { name: 'Mitch', age: 27, language: 'Javascript' };
-      const actual = createUserString(mitchObj);
+      const mitch = { name: 'Mitch', age: 27, language: 'Javascript' };
+      const actual = createUserString(mitch);
       expect(actual.includes('name: Mitch')).to.be.true;
     });
     it('returns a string containing "age : <user\'s age>"', () => {
-      const mitchObj = { name: 'Mitch', age: 27, language: 'Javascript' };
-      const actual = createUserString(mitchObj);
+      const mitch = { name: 'Mitch', age: 27, language: 'Javascript' };
+      const actual = createUserString(mitch);
       expect(actual.includes('age: 27')).to.be.true;
     });
     it('returns a string containing "language : <user\'s language>"', () => {
-      const mitchObj = { name: 'Mitch', age: 27, language: 'Javascript' };
-      const actual = createUserString(mitchObj);
+      const mitch = { name: 'Mitch', age: 27, language: 'Javascript' };
+      const actual = createUserString(mitch);
       expect(actual.includes('language: Javascript')).to.be.true;
     });
     it("returns a whole string with all of the user's details", () => {
-      const mitchObj = { name: 'Mitch', age: 27, language: 'Javascript' };
-      const actual = createUserString(mitchObj);
-      expect(actual.includes('name: Mitch, age: 27, language: Javascript')).to
-        .be.true;
+      const mitch = { name: 'Mitch', age: 27, language: 'Javascript' };
+      let actual = createUserString(mitch);
+      expect(actual.includes('name: Mitch, age: 27, language: Javascript')).to.be.true;
+        
+      const ant = { name: 'Ant', age: 28, language: 'Java' };
+      actual = createUserString(ant);
+      expect(actual.includes('name: Ant, age: 28, language: Java')).to.be.true;
     });
   });
 
