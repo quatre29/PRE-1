@@ -272,6 +272,7 @@ describe('types', () => {
     it('returns a new array without the item in the passed position', () => {
       expect(removeItem([1], 0)).to.eql([]);
       expect(removeItem([1, 2, 3], 1)).to.eql([1, 3]);
+      expect(removeItem([1, 7, 0, 4], 2)).to.eql([1, 7, 4]);
     });
     it("doesn't mutate the passed array, i.e. it returns a new array, leaving the original one unmodified", () => {
       const original = [1, 2, 3];
@@ -384,12 +385,12 @@ describe('types', () => {
         type: 'Tofu slices'
       };
       let newProduct = addPriceToProduct(product, 1.25);
-      expect(newProduct).to.eql({ type: "Tofu slices", price: 1.25 });
+      expect(newProduct).to.eql({ type: 'Tofu slices', price: 1.25 });
       expect(product.price).to.equal(1.25);
       delete product.price;
-      expect(product).to.eql({ type: "Tofu slices" });
+      expect(product).to.eql({ type: 'Tofu slices' });
       newProduct = addPriceToProduct(product, 1.35);
-      expect(newProduct).to.eql({ type: "Tofu slices", price: 1.35 });
+      expect(newProduct).to.eql({ type: 'Tofu slices', price: 1.35 });
       expect(product.price).to.equal(1.35);
     });
   });
@@ -439,8 +440,9 @@ describe('types', () => {
     it("returns a whole string with all of the user's details", () => {
       const mitch = { name: 'Mitch', age: 27, language: 'Javascript' };
       let actual = createUserString(mitch);
-      expect(actual.includes('name: Mitch, age: 27, language: Javascript')).to.be.true;
-        
+      expect(actual.includes('name: Mitch, age: 27, language: Javascript')).to
+        .be.true;
+
       const ant = { name: 'Ant', age: 28, language: 'Java' };
       actual = createUserString(ant);
       expect(actual.includes('name: Ant, age: 28, language: Java')).to.be.true;
