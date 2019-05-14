@@ -116,6 +116,9 @@ describe('types', () => {
 
   describe('getMiddle', () => {
     it('returns the middle character of an odd length string', () => {
+      expect(getMiddle('abc')).to.equal('b');
+    });
+    it('returns the middle character of an odd length string', () => {
       expect(getMiddle('abcde')).to.equal('c');
     });
     it('returns the middle two chracters of an even length string', () => {
