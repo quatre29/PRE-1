@@ -31,6 +31,8 @@ const {
   getUserAge,
   createProduct,
   addPriceToProduct,
+  getPropertyOfProduct,
+  addPropertyToProduct,
   createNorthcoder,
   createUserString,
   getAlbumProperties,
@@ -348,14 +350,14 @@ describe('types', () => {
     });
   });
 
-  describe('isOver40', function() {
-    it('returns true if the user is over 40', function() {
+  describe('isOver40', function () {
+    it('returns true if the user is over 40', function () {
       expect(isOver40({ age: 55 })).to.be.true;
       expect(isOver40({ age: 41 })).to.be.true;
       expect(isOver40({ age: 107 })).to.be.true;
       expect(isOver40({ age: 999 })).to.be.true;
     });
-    it('returns false if the user is 40 or younger', function() {
+    it('returns false if the user is 40 or younger', function () {
       expect(isOver40({ age: 40 })).to.be.false;
       expect(isOver40({ age: 4 })).to.be.false;
       expect(isOver40({ age: 10 })).to.be.false;
@@ -373,8 +375,8 @@ describe('types', () => {
     });
   });
 
-  describe('createProduct', function() {
-    it('should create the expected product', function() {
+  describe('createProduct', function () {
+    it('should create the expected product', function () {
       expect(createProduct()).to.haveOwnProperty('type');
       expect(createProduct()).to.haveOwnProperty('price');
       expect(createProduct().price).to.be.a('number');
@@ -395,6 +397,29 @@ describe('types', () => {
       newProduct = addPriceToProduct(product, 1.35);
       expect(newProduct).to.eql({ type: 'Tofu slices', price: 1.35 });
       expect(product.price).to.equal(1.35);
+    });
+  });
+
+  describe('getPropertyOfProduct', () => {
+    it('returns the value associated with the property on the product', () => {
+      const satsumas = { type: 'Easy-peeler satsumas', price: '£1.09', quantity: 8 };
+      expect(getPropertyOfProduct(satsumas, 'price')).to.equal('£1.09');
+      expect(getPropertyOfProduct(satsumas, 'quantity')).to.equal(8);
+      expect(getPropertyOfProduct(satsumas, 'type')).to.equal('Easy-peeler satsumas');
+      it('returns the value associated with the property on the product', () => {
+        const springGreens = { type: 'Crisp spring greens', price: '£0.79', quantity: 1 };
+        expect(getPropertyOfProduct(springGreens, 'price')).to.equal('£0.79');
+        expect(getPropertyOfProduct(springGreens, 'quantity')).to.equal(1);
+        expect(getPropertyOfProduct(springGreens, 'type')).to.equal('Crisp spring greens');
+      });
+    });
+  })
+
+  describe.only('addPropertyToProduct', () => {
+    it('return an updated product object with a new property and value', () => {
+      const dvd = { type: 'Terminator 2: Judgement Day', price: '£6.99', quantity: 1 };
+      expect(addPropertyToProduct(dvd, 'length', '2h 36m')).to.eql({ type: 'Terminator 2: Judgement Day', price: '£6.99', quantity: 1, length: '2h 36m' })
+      expect(addPropertyToProduct(dvd, 'cast', ['Arnold Schwarzenegger', 'Linda Hamilton', 'Robert Patrick', 'Edward Furlong'])).to.eql({ type: 'Terminator 2: Judgement Day', price: '£6.99', quantity: 1, length: '2h 36m', cast: ['Arnold Schwarzenegger', 'Linda Hamilton', 'Robert Patrick', 'Edward Furlong'] })
     });
   });
 
@@ -465,8 +490,8 @@ describe('types', () => {
     });
   });
 
-  describe('deleteManyPasswords', function() {
-    it('deletes the password key value pair on every object in an array of createUserString', function() {
+  describe('deleteManyPasswords', function () {
+    it('deletes the password key value pair on every object in an array of createUserString', function () {
       expect(
         deleteManyPasswords([
           { name: 'Barry', password: 'ilovetea' },
@@ -483,8 +508,8 @@ describe('types', () => {
     });
   });
 
-  describe('countTheObjects', function() {
-    it('returns the count of objects inside an array of random data types', function() {
+  describe('countTheObjects', function () {
+    it('returns the count of objects inside an array of random data types', function () {
       expect(countTheObjects([])).to.equal(0);
       expect(countTheObjects([1, 3, 4, 5])).to.equal(0);
       expect(countTheObjects([1, 3, 4, 5, 'foo'])).to.equal(0);
