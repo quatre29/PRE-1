@@ -415,7 +415,7 @@ describe('types', () => {
     });
   })
 
-  describe.only('addPropertyToProduct', () => {
+  describe('addPropertyToProduct', () => {
     it('return an updated product object with a new property and value', () => {
       const dvd = { type: 'Terminator 2: Judgement Day', price: '£6.99', quantity: 1 };
       expect(addPropertyToProduct(dvd, 'length', '2h 36m')).to.eql({ type: 'Terminator 2: Judgement Day', price: '£6.99', quantity: 1, length: '2h 36m' })
