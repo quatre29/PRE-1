@@ -148,6 +148,23 @@ function addPriceToProduct(product, price) {
     */
 }
 
+function getPropertyOfProduct(product, property) {
+  /* The argument product will be an object that looks like this:
+    { type: 'Easy-peeler satsumas', price: '£1.09', quantity: 8 }
+    Given a 'property' as an argument, return the value associated with that 'property'. 
+    E.g. if asked for the price 'property' of the above satsumas object, your function would return '£1.09'.
+  */
+}
+
+function addPropertyToProduct(product, property, value) {
+  /* The argument 'product' will be an object that looks like this:
+    { type: 'Terminator 2: Judgement Day', price: '£6.99', quantity: 1 }
+    Given a 'property' as an argument, as well as its corresponding value, update the 'product' to include this new information. Then return the updated 'product'.
+    E.g. if given the 'property' 'length' and the value '2h 36m' (yes it really is that long) 
+    your function should return { type: 'Terminator 2: Judgement Day', price: '£6.99', quantity: 1, length: '2h 36m' }
+  */
+}
+
 function createNorthcoder(name, yearOfBirth) {
   // return an object with:
   // a name property set to the value of the name parameter
@@ -225,6 +242,8 @@ module.exports = {
   getUserAge,
   createProduct,
   addPriceToProduct,
+  getPropertyOfProduct,
+  addPropertyToProduct,
   createNorthcoder,
   createUserString,
   getAlbumProperties,
