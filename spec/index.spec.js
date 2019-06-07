@@ -364,6 +364,9 @@ describe('types', () => {
       expect(isOver40({ age: 10 })).to.be.false;
       expect(isOver40({ age: 29 })).to.be.false;
     });
+    it("ignores other properties", () => {
+      expect(isOver40({ age: 4, favouriteNumber: 60 })).to.be.false;
+    });
   });
 
   describe('getUserAge', () => {
