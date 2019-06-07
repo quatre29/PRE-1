@@ -278,6 +278,7 @@ describe('types', () => {
       expect(removeItem([1], 0)).to.eql([]);
       expect(removeItem([1, 2, 3], 1)).to.eql([1, 3]);
       expect(removeItem([1, 7, 0, 4], 2)).to.eql([1, 7, 4]);
+      expect(removeItem([1, 2, 1], 2)).to.eql([1, 2]);
     });
     it("doesn't mutate the passed array, i.e. it returns a new array, leaving the original one unmodified", () => {
       const original = [1, 2, 3];
