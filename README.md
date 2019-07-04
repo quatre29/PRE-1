@@ -81,7 +81,9 @@ You will need to use Git to download this repository so that you can complete th
 
 ### Challenges
 
-There are two sets of challenges attached to this section. The first are aimed at ensuring you understand the different types of values there are in JavaScript, and some of their attached methods. The second are to test your problem solving skills, using what you've learnt about JavaScript logic creatively.
+The challenges attached to this section are designed to test your coding ability and help you build familiarity with the environment you will be using every day on the course. We
+
+we are looking for you to demonstrate your understanding of the different types of values there are in JavaScript, and some of their attached methods. We also want to see your ability to solve problems and use what you've learnt about JavaScript logic creatively.
 
 These videos demonstrate the workflow required to get, solve and submit the final challenges. There's step-by-step instructions below too - this will put your skills with the command line and git to the test, alongside JavaScript problem solving.
 
@@ -120,10 +122,8 @@ xdescribe('getLastWord', () => {
 
 This will allow the test suite to skip over it and it will list as 'pending' in your terminal on running `npm test`.
 
-8. Practice using git from the command line by adding and committing your work frequently as you work through the exercises. Commit whenever you make something work - use commits to celebrate small victories.
+8. Practice using git from the command line by adding and committing your work frequently as you work through the exercises. When you solve a problem, make a commit.
 
-9. When you are happy with your solutions, make a final commit and push the work to your Github.
+9. After you have a attempted all problems and have passed all of the tests, push your code to git and <a href='https://us-central1-precourse-pushes.cloudfunctions.net/reviewme/?section=PRE-1' target='_blank'> request a review.</a>. 
 
-10. Once you've completed these problems, <a href='https://us-central1-precourse-pushes.cloudfunctions.net/reviewme/?section=PRE-1' target='_blank'> request a review.</a>
-
-11. The teaching team will provide feedback after reviewing your code, typically within 48 hours. Fix any issues with your solutions and apply these suggestions to this and subsequent sections.
+10. The teaching team will provide feedback after reviewing your code, typically within 48 hours. Fix any issues with your solutions and apply these suggestions to this and subsequent sections.
