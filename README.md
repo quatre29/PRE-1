@@ -2,6 +2,8 @@
 
 These are the tasks you should aim to complete in your first 1-2 weeks doing the Precourse. You can switch between them - don't feel you have to complete everything in order, especially if you're having issues with one particular problem.
 
+As well as your technical ability, we also want you to demonstrate you can handle the workload and pace of a coding bootcamp. This means providing regular updates of your progress, and letting us know if you get stuck. We encourage you to attend our regular drop-in sessions and make use of the 'Precouse' Slack channel (if you haven't received an invite let us know).
+
 ### Basic Skills
 
 You've probably already demonstrated in your tech test that you know how to handle these situation, but make sure you are absolutely confident with them as they will underpin everything you do in JavaScript in this Precourse and beyond.
