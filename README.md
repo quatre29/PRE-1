@@ -63,7 +63,11 @@ Whilst doing this, you should start to use built-in JavaScript methods - functio
 
 Please read [this article](http://learntocodewith.me/getting-started/topics/command-line/) that explains why we use the command line.
 
-Follow [this tutorial](https://www.learnenough.com/command-line-tutorial) on using the command line. Follow the whole course up to the end, completing the exercises. Code Academy also has [more practice material](https://codeacademy.com/learn/learn-the-command-line) on the command line if you want to use this in addition.
+Follow a tutorial on how to use the command line. There are some differences between macOS and Linux command line (Ubuntu, Mint...) so choose the appropriate one: 
+ - [macOS](https://openclassrooms.com/en/courses/4614926-learn-the-command-line-in-terminal?status=published)
+ - [Linux](https://tutorials.ubuntu.com/tutorial/command-line-for-beginners)
+ 
+Follow the whole course up to the end. Code Academy also has [more practice material](https://codeacademy.com/learn/learn-the-command-line) on the command line too.
 
 Print out or bookmark this [cheat sheet](https://www.git-tower.com/blog/command-line-cheat-sheet/) of common commands. The directories and files commands are most useful so try to practice with these and commit them to memory as soon as possible.
 
