@@ -25,6 +25,15 @@ Please watch [these 5 videos by Michael Starbird](https://www.youtube.com/playli
 
 If you haven't already done so, please work through some of the [Algorithm Challenges on FreeCodeCamp](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting). All of the problems in this chapter are excellent practice - we recommend trying to solve 5 of them as a minimum.
 
+### Coding Style
+
+It's important our code is easy to read and well laid out. As well as helping other people, it also makes our life easier when we go back and read our code over at a later date.
+
+Read this article and implement these styling guidelines when working through the rest of the Precourse:
+https://javascript.info/coding-style
+
+Always be asking yourself 'if I was to take away the question and any comments, can someone still understand what my code is doing?'
+
 ### Codewars
 
 There are lots of sites that offer katas (self-contained coding problems) for you to sharpen your problem-solving skills. One of the most important things you can do is get as much practise problem-solving with JavaScript as possible.
