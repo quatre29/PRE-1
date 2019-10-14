@@ -50,7 +50,6 @@ Here are some recommended Codewars katas to get you started.
  - [Removing Elements](http://www.codewars.com/kata/removing-elements)
  - [Initialize my name](http://www.codewars.com/kata/initialize-my-name)
  - [Needle in a Haystack](http://www.codewars.com/kata/a-needle-in-the-haystack)
- - [Alternating Case](http://www.codewars.com/kata/alternating-case-%3C-equals-%3E-alternating-case)
  - [Powers of Two](http://www.codewars.com/kata/powers-of-2)
  - [Chinese Zodiac](http://www.codewars.com/kata/chinese-zodiac)
  - [Leet Speak](http://www.codewars.com/kata/toleetspeak)
