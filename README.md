@@ -2,11 +2,11 @@
 
 These are the tasks you should aim to complete in your first 1-2 weeks doing the Precourse. You can switch between them - don't feel you have to complete everything in order, especially if you're having issues with one particular problem.
 
-As well as your technical ability, we also want you to demonstrate you can handle the workload and pace of a coding bootcamp. This means providing regular updates of your progress, and letting us know if you get stuck. We encourage you to attend our regular drop-in sessions and make use of the 'Precouse' Slack channel (if you haven't received an invite let us know).
+As well as your technical ability, we also want you to show you can handle the workload and pace of a coding bootcamp. This means providing regular updates of your progress, and letting us know if you get stuck. We encourage you to attend our regular drop-in sessions and make use of the 'Precouse' Slack channel (if you haven't received an invite let us know).
 
 ### Basic Skills
 
-You've probably already demonstrated in your tech test that you know how to handle these situation, but make sure you are absolutely confident with them as they will underpin everything you do in JavaScript in this Precourse and beyond.
+You've probably already shown in your tech test that you know how to handle these situation, but make sure you are absolutely confident with them as they will underpin everything you do in JavaScript in this Precourse and beyond.
 
 * Store a value as a variable
 * Execute code conditionally ('if' something is true)
@@ -87,19 +87,19 @@ Version control is a necessity in modern-day programming. Git and Github are big
 
 Make sure you have installed git (revisit the Install Guide if necessary) and that we have your Github account details.
 
-For a basic introduction to Git and Github, please watch videos 1-7 of [this playlist](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).
+For a basic introduction to git and Github, please watch videos 1-7 of [this playlist](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).
 
 Try out git yourself by following the GitHub Learning Lab course at the bottom of this page of the [GitHib Learning Resources](https://try.github.io/).
 
-You will need to use Git to download this repository so that you can complete the final challenges!
+You will need to use git to download this repository so that you can complete the final challenges!
 
 ### Challenges
 
 The challenges attached to this section are designed to test your coding ability and help you build familiarity with the environment you will be using every day on the course. We
 
-we are looking for you to demonstrate your understanding of the different types of values there are in JavaScript, and some of their attached methods. We also want to see your ability to solve problems and use what you've learnt about JavaScript logic creatively.
+we are looking for you to show your understanding of the different types of values there are in JavaScript, and some of their attached methods. We also want to see your ability to solve problems and use what you've learnt about JavaScript logic creatively.
 
-These videos demonstrate the workflow required to get, solve and submit the final challenges. There's step-by-step instructions below too - this will put your skills with the command line and git to the test, alongside JavaScript problem solving.
+These videos show the workflow required to get, solve and submit the final challenges. There's step-by-step instructions below too - this will put your skills with the command line and git to the test, alongside JavaScript problem solving.
 
 [Forking and cloning the project](https://youtu.be/QxvgzQFmOJE)
 
