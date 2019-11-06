@@ -179,6 +179,11 @@ function createUserString(userObj) {
   // Note - this is a good use case of string template literals.
 }
 
+function getNorthcodersNames(northcoders) {
+  // should take an array of objects with the format from createNorthcoder
+  // returns an array of the users' names as strings
+}
+
 function getAlbumProperties(obj) {
   // should take an object with information about an album
   // should return an array containing all of the object's keys
@@ -246,6 +251,7 @@ module.exports = {
   addPropertyToProduct,
   createNorthcoder,
   createUserString,
+  getNorthcodersNames,
   getAlbumProperties,
   deleteManyPasswords,
   countTheObjects
