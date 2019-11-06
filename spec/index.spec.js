@@ -29,6 +29,7 @@ const {
   isItemOmnipresent,
   isOver40,
   getUserAge,
+  getUserPetAge,
   createProduct,
   addPriceToProduct,
   getPropertyOfProduct,
@@ -380,6 +381,23 @@ describe("types", () => {
     });
   });
 
+  describe("getUserPetAge", () => {
+    it("returns the age of the user's pet", () => {
+      const tom = {
+        name: "Tom",
+        age: 26,
+        pet: { name: "Barney", age: 6, type: "good boy" }
+      };
+      const paul = {
+        name: "Paul",
+        age: 29,
+        pet: { name: "Dave", age: 13, type: "cat" }
+      };
+      expect(getUserPetAge(tom)).to.equal(6);
+      expect(getUserPetAge(paul)).to.equal(13);
+    });
+  });
+
   describe("createProduct", function() {
     it("should create the expected product", function() {
       expect(createProduct()).to.haveOwnProperty("type");
@@ -521,7 +539,7 @@ describe("types", () => {
     });
   });
 
-  describe.only("getNorthcodersNames", () => {
+  describe("getNorthcodersNames", () => {
     it("returns an empty array when given an empty list of northcoders", () => {
       const northcoders = [];
       const actual = getNorthcodersNames(northcoders);

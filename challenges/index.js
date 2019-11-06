@@ -135,6 +135,21 @@ function getUserAge(user) {
   // you can assume that the passed user will always have a 'yearOfBirth' property.
 }
 
+function getUserPetAge(user) {
+  /*  The argument user will be an object. The object is nested; there are objects paired to keys on the user object. It will be in this format:
+      {
+        name: "Tom",
+        age: 26,
+        pet: {
+          name: "Barney",
+          age: 6,
+          type: "good boy"
+        }
+      };
+      This function should access the age property in the nested pet object and return the value
+  */
+}
+
 function createProduct() {
   /*
     This function should return an object with a type property and a price property. The value for type can be any string, and the value for price should be a number.
@@ -245,6 +260,7 @@ module.exports = {
   isItemOmnipresent,
   isOver40,
   getUserAge,
+  getUserPetAge,
   createProduct,
   addPriceToProduct,
   getPropertyOfProduct,
