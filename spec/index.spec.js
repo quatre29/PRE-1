@@ -35,6 +35,7 @@ const {
   getPropertyOfProduct,
   addPropertyToProduct,
   createNorthcoder,
+  updateVoterAddress,
   createUserString,
   getNorthcodersNames,
   getAlbumProperties,
@@ -508,6 +509,25 @@ describe("types", () => {
       const northcoder = createNorthcoder("Mauro", 1989);
       expect(northcoder).to.haveOwnProperty("language");
       expect(northcoder.language).to.equal("JavaScript");
+    });
+  });
+
+  describe("updateVoterAddress", () => {
+    it("changes the voter's house number", () => {
+      const mitch = {
+        name: "Mitch",
+        age: 27,
+        address: { houseNumber: 61, street: "Bushwood Rd", city: "Manchester" }
+      };
+      const alex = {
+        name: "Alex",
+        age: 39,
+        address: { houseNumber: 2, street: "Old St", city: "Chester" }
+      };
+      updateVoterAddress(mitch, 10);
+      updateVoterAddress(alex, 23);
+      expect(mitch.address.houseNumber).to.equal(10);
+      expect(alex.address.houseNumber).to.equal(23);
     });
   });
 

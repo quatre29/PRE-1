@@ -187,6 +187,21 @@ function createNorthcoder(name, yearOfBirth) {
   // a language property set to 'JavaScript'
 }
 
+function updateVoterAddress(voter, correctHouseNumber) {
+  /* Uh-Oh! We've got some silly voters who've registered their addresses incorrectly. Lets help them fix those typos by changing their houseNumber to the correctHouseNumber. The user object looks like this:
+    {
+      name: "Alex",
+      age: 39,
+      address: { 
+        houseNumber: 2, 
+        street: "Old St", 
+        city: "Chester" 
+      }
+    };
+    Note - The function does NOT need to return anything.
+  */
+}
+
 function createUserString(userObj) {
   // should take as an argument an object with the format from createNorthcoder
   // returns a string with the user's details in the form:
@@ -266,6 +281,7 @@ module.exports = {
   getPropertyOfProduct,
   addPropertyToProduct,
   createNorthcoder,
+  updateVoterAddress,
   createUserString,
   getNorthcodersNames,
   getAlbumProperties,
