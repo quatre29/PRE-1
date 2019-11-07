@@ -135,6 +135,21 @@ function getUserAge(user) {
   // you can assume that the passed user will always have a 'yearOfBirth' property.
 }
 
+function getUserPetAge(user) {
+  /*  The argument user will be an object. The object is nested; there are objects paired to keys on the user object. It will be in this format:
+      {
+        name: "Tom",
+        age: 26,
+        pet: {
+          name: "Barney",
+          age: 6,
+          type: "good boy"
+        }
+      };
+      This function should access the age property in the nested pet object and return the value
+  */
+}
+
 function createProduct() {
   /*
     This function should return an object with a type property and a price property. The value for type can be any string, and the value for price should be a number.
@@ -172,11 +187,31 @@ function createNorthcoder(name, yearOfBirth) {
   // a language property set to 'JavaScript'
 }
 
+function updateVoterAddress(voter, correctHouseNumber) {
+  /* Uh-Oh! We've got some silly voters who've registered their addresses incorrectly. Lets help them fix those typos by changing their houseNumber to the correctHouseNumber. The user object looks like this:
+    {
+      name: "Alex",
+      age: 39,
+      address: { 
+        houseNumber: 2, 
+        street: "Old St", 
+        city: "Chester" 
+      }
+    };
+    Note - The function does NOT need to return anything.
+  */
+}
+
 function createUserString(userObj) {
   // should take as an argument an object with the format from createNorthcoder
   // returns a string with the user's details in the form:
   // 'name: Mitch, age: 27, language: Javascript';
   // Note - this is a good use case of string template literals.
+}
+
+function getNorthcodersNames(northcoders) {
+  // should take an array of objects with the format from createNorthcoder
+  // returns an array of the users' names as strings
 }
 
 function getAlbumProperties(obj) {
@@ -240,12 +275,15 @@ module.exports = {
   isItemOmnipresent,
   isOver40,
   getUserAge,
+  getUserPetAge,
   createProduct,
   addPriceToProduct,
   getPropertyOfProduct,
   addPropertyToProduct,
   createNorthcoder,
+  updateVoterAddress,
   createUserString,
+  getNorthcodersNames,
   getAlbumProperties,
   deleteManyPasswords,
   countTheObjects
