@@ -345,11 +345,23 @@ describe("types", () => {
       expect(isItemOmnipresent(arrayOfArrays, 9)).to.be.true;
     });
     it("returns false if the passed value is not present in at least one array inside the passed array", () => {
-      let arrayOfArrays = [[9, 2, 3], [4, 5, 9], [-2, 1, -1]];
+      let arrayOfArrays = [
+        [9, 2, 3],
+        [4, 5, 9],
+        [-2, 1, -1]
+      ];
       expect(isItemOmnipresent(arrayOfArrays, 9)).to.be.false;
-      arrayOfArrays = [[6, 2, 3], [4, 5, 8], [-2, 9, -1]];
+      arrayOfArrays = [
+        [6, 2, 3],
+        [4, 5, 8],
+        [-2, 9, -1]
+      ];
       expect(isItemOmnipresent(arrayOfArrays, 9)).to.be.false;
-      arrayOfArrays = [[4, 2, 3], [4, 5, 9], [-2, 9, -1]];
+      arrayOfArrays = [
+        [4, 2, 3],
+        [4, 5, 9],
+        [-2, 9, 9]
+      ];
       expect(isItemOmnipresent(arrayOfArrays, 9)).to.be.false;
     });
   });
