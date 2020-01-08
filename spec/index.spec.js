@@ -448,18 +448,18 @@ describe("types", () => {
       expect(getPropertyOfProduct(satsumas, "type")).to.equal(
         "Easy-peeler satsumas"
       );
-      it("returns the value associated with the property on the product", () => {
-        const springGreens = {
-          type: "Crisp spring greens",
-          price: "£0.79",
-          quantity: 1
-        };
-        expect(getPropertyOfProduct(springGreens, "price")).to.equal("£0.79");
-        expect(getPropertyOfProduct(springGreens, "quantity")).to.equal(1);
-        expect(getPropertyOfProduct(springGreens, "type")).to.equal(
-          "Crisp spring greens"
-        );
-      });
+    });
+    it("returns the value associated with the property on the product", () => {
+      const springGreens = {
+        type: "Crisp spring greens",
+        price: "£0.79",
+        quantity: 1
+      };
+      expect(getPropertyOfProduct(springGreens, "price")).to.equal("£0.79");
+      expect(getPropertyOfProduct(springGreens, "quantity")).to.equal(1);
+      expect(getPropertyOfProduct(springGreens, "type")).to.equal(
+        "Crisp spring greens"
+      );
     });
   });
 
