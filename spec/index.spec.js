@@ -99,6 +99,7 @@ describe("types", () => {
   describe("putNamesTogether", () => {
     it("returns the passed names separated by a space", () => {
       expect(putNamesTogether("Kevin", "Durant")).to.equal("Kevin Durant");
+      expect(putNamesTogether("Stephen", "Curry")).to.equal("Stephen Curry");
     });
   });
 
