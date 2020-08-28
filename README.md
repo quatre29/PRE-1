@@ -138,6 +138,4 @@ This will allow the test suite to skip over it and it will list as 'pending' in 
 
 8. Practice using git from the command line by adding and committing your work frequently as you work through the exercises. When you solve a problem, make a commit.
 
-9. After you have a attempted all problems and have passed all of the tests, push your code to git and <a href='https://us-central1-precourse-pushes.cloudfunctions.net/reviewme/?section=PRE-1' target='_blank'> request a review.</a>. 
-
-10. The teaching team will provide feedback after reviewing your code, typically within 48 hours. Fix any issues with your solutions and apply these suggestions to this and subsequent sections.
+9. If you're having difficulties, you can post on the NC Slack Channel - we'll try to get back to you as soon as possible, and there's usually some helpful current / former / upcoming students with useful advice too :)
