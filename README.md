@@ -99,7 +99,7 @@ The challenges attached to this section are designed to test your coding ability
 
 we are looking for you to show your understanding of the different types of values there are in JavaScript, and some of their attached methods. We also want to see your ability to solve problems and use what you've learnt about JavaScript logic creatively.
 
-These videos show the workflow required to get, solve and submit the final challenges. There's step-by-step instructions below too - this will put your skills with the command line and git to the test, alongside JavaScript problem solving.
+These videos show the workflow required to get and solve the final challenges. There's step-by-step instructions below too - this will put your skills with the command line and git to the test, alongside JavaScript problem solving.
 
 [Forking and cloning the project](https://youtu.be/QxvgzQFmOJE)
 
