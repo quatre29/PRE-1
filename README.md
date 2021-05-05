@@ -115,8 +115,6 @@ Please note that the arrangement of the files has changed a bit since we recorde
 
 3. Run `npm install` in your terminal.
 
-3.5. If you've not done so already, be sure to install mocha globally by running `npm install -g mocha` in your terminal.
-
 4. Run `npm test` in your terminal to see the test suite. You will see lots of red - that's good!
 
 5. Open the index.js challenge file in VS Code and begin solving them.
