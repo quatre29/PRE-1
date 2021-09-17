@@ -3,6 +3,7 @@
 
 function modulo(a, b) {
   // return the remainder of the division a / b
+  return a % b
 }
 
 function squareRoot(n) {
