@@ -3,15 +3,17 @@
 
 function modulo(a, b) {
   // return the remainder of the division a / b
-  return a % b
+  return a % b;
 }
 
 function squareRoot(n) {
   // return the square root of n
+  return Math.sqrt(n);
 }
 
 function raiseToPower(m, n) {
   // return the result of raising m to the nth power
+  return m ** n;
 }
 
 function formatMoney(amount) {
@@ -24,105 +26,170 @@ function formatMoney(amount) {
    * Amounts should always have 2 decimal numbers even if they are zeroes
    * formatMoney(1) => "£1.00"
    */
+
+  return `£${amount.toFixed(2)}`;
 }
 
 function calculateCircleArea(r) {
   // return the area of a circle with radius r
   // round result to 3 decimal numbers
+  // return Math.round(((3.142 * (r * r)) + Number.EPSILON) * 1000) / 1000
+  return parseFloat((3.14159265359 * r * r).toFixed(3));
+  //----------------------------------------------------------------------------------------
 }
 
 function calculateFullTurns(degrees) {
   // return the number of full turns you can make with the provided degrees
   // 1 full turn === 360 degrees
+  return Math.floor(degrees / 360);
 }
 
 function getLength(str) {
   // return the length of the passed string
+  return str.length;
 }
 
 function putNamesTogether(firstName, lastName) {
   // return the first and last names with a space between them
+  return `${firstName} ${lastName}`;
 }
 
 function capitaliseString(str) {
   // return the passed string with its first letter capitalised
+  return `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
 }
 
 function dontShoutSentence(SENTENCE) {
   // return the passed sentence (IN ALL CAPS) in lower case
   // keep the first character capitalised
+  return `${SENTENCE.charAt(0)}${SENTENCE.slice(1).toLowerCase()}`;
 }
 
 function getMiddle(str) {
   // return the middle (or middle two) character(s) of the passed string
+  const middlePoint = str.length / 2;
+  let middleChars = "";
+
+  str.length % 2 === 0
+    ? (middleChars = str.slice(middlePoint - 1, middlePoint + 1))
+    : (middleChars = str.slice(middlePoint, middlePoint + 1));
+  return middleChars;
 }
 
 function getLastWord(words) {
   // return the last word of a sentence
   // you can assume words doesn't have a period at the end
+  const wordsArr = words.split(" ");
+  return wordsArr[wordsArr.length - 1];
 }
 
 function hyphenateWords(words) {
   // return the passed string with the spaces replaced by hyphens ("-")
+  return words.split(" ").join("-");
 }
 
 function convertToCamelCase(words) {
   // convert the passed string of space-separated words to camel case
   // camel case looks like this --> camelCaseLooksLikeThis
+  const wordsArr = words.split(" ");
+  let newStr = "";
+  wordsArr.forEach(
+    (w) => (newStr += `${w.charAt(0).toUpperCase()}${w.slice(1)}`)
+  );
+
+  return `${newStr.charAt(0).toLowerCase()}${newStr.slice(1)}`;
 }
 
 function areValuesEqual(left, right) {
   // return true if the passed arguments are strictly equal
+  return left === right;
 }
 
 function areValuesNotEqual(left, right) {
   // return true if the passed arguments are NOT equal
+  return left !== right;
 }
 
 function isFromThe60s(year) {
   // return true if the year is in the 1960's
+  return year >= 1960 && year <= 1969;
 }
 
 function isEvenLength(string) {
   // return true if string has an even length
+
+  return string.length % 2 === 0;
 }
 
 function areStringsEqualCaseInsensitive(left, right) {
   // return true if the passed strings are equal ignoring case
+  return left.toLowerCase() === right.toLowerCase() ? true : false;
 }
 
 function getEvenNumbers(nums) {
   //return an array of only the even numbers in the given array
+  return nums.filter((n) => n % 2 === 0);
 }
 
 function getItemsLongerThan(array, len) {
   //return an array of only the items longer than the given length
+  const newArr = [];
+  array.forEach((el) => {
+    el.length > len && newArr.push(el);
+  });
+
+  return newArr;
 }
 
 function getLastItems(array, n) {
   // return an array with the 'n' last items of 'array'
+  return array.slice(array.length - n);
 }
 
 function getSandwichFilling(sandwich) {
   // if an array is a sandwich, the first and last items are the bread, return an array with the filling of the sandwich
+  if (sandwich.length >= 3) {
+    return sandwich.slice(1, -1);
+  }
+  return [];
 }
 
 function removeItem(array, n) {
   // return a new array without the item on position 'n', effectively removing it from the array
+  return array.filter((item, idx) => idx !== n);
 }
 
 function mergeArrays(arr1, arr2) {
   // return a new array with all the elements of arr1 followed by all the elements of arr2
+  return [...arr1, ...arr2];
 }
 
 function flattenArrayByOne(arrayOfArrays) {
   // given a nested array or arrays, return a new array with one less level of nesting. All the elements of all the original nested arrays must be kept in their original order
   // for example:
   // [[1],[2],[[3,4]]] => [1,2,[3,4]]
+  return arrayOfArrays.flat();
 }
 
 function isItemOmnipresent(arrayOfArrays, item) {
-  // return true if the passed item is present in all the arrays inside arrayOfArrays
+  let omnipresent = [];
+
+  function helper(helperInput) {
+    for (let i of helperInput) {
+      if (Array.isArray(i)) {
+        helper(i);
+      }
+      if (i === item) {
+        omnipresent.push(true);
+        return;
+      }
+    }
+    omnipresent.push(false);
+  }
+
+  helper(arrayOfArrays);
+
+  return omnipresent.slice(0, -1).every((item) => item === true);
 }
 
 function isOver40(user) {
@@ -287,5 +354,5 @@ module.exports = {
   getNorthcodersNames,
   getAlbumProperties,
   deleteManyPasswords,
-  countTheObjects
+  countTheObjects,
 };
